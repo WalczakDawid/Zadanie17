@@ -3,10 +3,17 @@
 float cuboid_volume(float a, float b, float h){
 return (a*b*h);
 }
+float ball_volume(float r){
+return(((4.0/3.0)*3.14)*(r*r*r));
+}
 int main()
 {
-    float a, b, h;
-    printf("Podaj dlugosc podstawy prostopadloscianu\n");
+    float a, b, h,r;
+    printf ("Podaj promien kuli\n");
+    scanf ("%f", &r);
+
+    printf("\nObjetosc kuli: %f", ball_volume(r));
+   /* printf("Podaj dlugosc podstawy prostopadloscianu\n");
    scanf("%f", &a);
 
    printf("Podaj szerokosc podstawy prostopadloscianu\n");
@@ -15,6 +22,7 @@ int main()
    printf("Podaj wysokosc podstawy prostopadloscianu\n");
    scanf("%f", &h);
 
-   printf("\nObjetosc prostopadloscianu: %f\n", cuboid_volume(a, b, h));
+   printf("\nObjetosc prostopadloscianu: %f\n", cuboid_volume(a, b, h)); */
+
     return 0;
 }
